@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./javascript/n-script.js"></script>
+    </head>
+    <body>
+        <header id="task-bar">
+            <nav class="nav-tools">
+                <ol>
+                    <li id="open-file">Abrir</li>
+                    <li id="new-file">Novo</li>
+                    <li id="save">Salvar</li>
+                    <li id="save-as">Salvar Como</li>
+                    <li id="close">Fechar</li>
+                    <!-- <li id="on-server">Ligar Server</li> -->
+                    <li id="run-script">Rodar Script</li>
+                    <li id="help">Ajuda</li>
+                </ol>
+            </nav>
+        </header>
+        <div id="welcome">
+            <h1>ScriptGui</h1>
+            <p>
+                Crie anotações e script com maior facilidade e produtividade. App desenvolvido por 
+                <link-author url="https://jefferson-developer.herokuapp.com">Jefferson Silva</link-author>,
+                visite o nosso <link-author url="https://github.com/Nhac-dev">GirHub</link-author>,
+                ou nosso <link-author url="https://instagram.com/jeff.developer">instagram</link-author>.
+                <br>
+                <button id="init-open">Abrir arquivo</button>                
+                <button id="init-new">Novo arquivo</button>                
+                <button id="init-help">Ajuda</button>                
+                <button id="english-v">English Version</button>                
+            </p>
+        </div>
+        <div id="tab-cont"></div>
+        <div id="area-cont"></div>
+
+       
+        <script>
+            const {ipcRenderer:api}= require("electron");
+            const lang = "pt";
+        </script>
+
+        <script src="./javascript/components/tabs.js"></script>
+        <script src="./javascript/components/tools.js"></script>
+        <script src="./javascript/link.js"></script>
+        <script src="./javascript/load.js"></script>
+    </body>
+</html>

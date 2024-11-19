@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../javascript/n-script.js"></script>
+    </head>
+    <body>
+        <header id="task-bar">
+            <nav class="nav-tools">
+                <ol>
+                    <li id="home"><a href="../index.html">Inicio</a></li>
+                </ol>
+            </nav>
+        </header>
+        <div id="welcome">
+            <h1>ScriptGui - Help</h1>
+            <p>
+                O objetivo principal desta aplicação é o trabalho com os documentos simples, como txt, json, md, entre outros.
+                <br>
+                <!-- Adicionei também a capacidade de um live server, para arquivos HTML. Eles serão abertos numa localhost, permitindo que tu depure tanto pelo browser como pelo nosso app.
+                <br>
+                Outra funcionalidade é rodar os scripts, seja python, js e go  desde que tenha os seus interpretadores instalados na maquina. -->
+            </p>
+            <h2>Ferramentas && Atalhos</h2>
+            <p>
+                Abaixo são todas as ferramentas e sua funcionalidade:
+                <ol type="I">
+                    <li><strong>Abrir</strong> - Abrirá um arquivo de texto presente na sua máquina</li>
+                    <li><strong>Novo</strong> - Criara um arquivo</li>
+                    <li><strong>Salvar</strong> - Salvará o arquivo em foco</li>
+                    <li><strong>Salvar Como</strong>  - Salvará uma copia arquivo em foco</li>
+                    <li><strong>Fechar</strong> - Fechará o arquivo</li>
+                    <!-- <li><strong>Ligar Server</strong> - Abrirá um web server e exporá o arquivo HTML</li> -->
+                    <!-- <li><strong>Fechar Server</strong> - Fechará o web server aberto</li> -->
+                    <li><strong>Rodar Script</strong> - Rodará o script solicitado(se for script)</li>
+                </ol>
+                Atalhos:
+                <ul>
+                    <li><strong>Abrir</strong> - Ctrl + O</li>
+                    <li><strong>Novo</strong> - Ctrl + N</li>
+                    <li><strong>Salvar</strong> - Ctrl + S</li>
+                    <li><strong>Salvar Como</strong>  - Ctrl + shift + S</li>
+                    <li><strong>Fechar</strong> - Ctrl + p</li>
+                    <!-- <li><strong>Ligar Server</strong> - Ctrl + L</li> -->
+                    <!-- <li><strong>Fechar Server</strong> - Ctrl + L</li> -->
+                    <li><strong>Rodar Script</strong> - Ctrl + 5</li>
+                </ul>
+            </p>
+            <h3>Segredinho</h3>
+            <p>
+                Se apertar ALT + S, abrirá um arquivo de configuração, nele poderá configurar o app e até mesmo mudar a aparência dele.
+            </p>
+        </div>       
+        <script>
+            const {ipcRenderer:api}= require("electron");
+            const lang = "pt";
+        </script>
+        
+        <script src="./javascript/components/tabs.js"></script>
+        <script src="./javascript/components/tools.js"></script>
+        <script src="./javascript/link.js"></script>
+    </body>
+</html>

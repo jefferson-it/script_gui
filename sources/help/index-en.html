@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../javascript/n-script.js"></script>
+    </head>
+    <body>
+        <header id="task-bar">
+            <nav class="nav-tools">
+                <ol>
+                    <li id="home"><a href="../index-en.html">Home</a></li>
+                </ol>
+            </nav>
+        </header>
+        <div id="welcome">
+            <h1>ScriptGui - Help</h1>
+            <p>
+                The main purpose of this application is to work with simple documents such as txt, json, md, among others.
+                <br>
+                <!-- I also added the capability of a live server, for HTML files. They will be opened on a localhost, allowing you to debug both through the browser and our app. -->
+                <!-- <br> -->
+                <!-- Another feature is to run scripts, be it python, js and go as long as you have their interpreters installed on the machine. -->
+            </p>
+            <h2>Tools && Shortcuts</h2>
+            <p>
+                Below are all the tools and their functionality:
+                <ol type="I">
+                    <li><strong>Open</strong> - Will open a text file present on your machine</li>
+                    <li><strong>New</strong> - Will create a file</li>
+                    <li><strong>Save</strong> - Will save the hover file</li>
+                    <li><strong>Save As</strong> - Will save a copy of hover file</li>
+                    <li><strong>Close</strong> - Will close the file</li>
+                    <!-- <li><strong>Live Server</strong> - Will open a web server and expose the HTML file</li> -->
+                    <!-- <li><strong>End Server</strong> - Will close open web server</li> -->
+                    <!-- <li><strong>Run Script</strong> - Will run the requested script (if script)</li> -->
+                </ol>
+                Shortcuts:
+                <ul>
+                    <li><strong>Open</strong> - Ctrl + O</li>
+                    <li><strong>New</strong> - Ctrl + N</li>
+                    <li><strong>Save</strong> - Ctrl + S</li>
+                    <li><strong>Save As</strong> - Ctrl + shift + S</li>
+                    <li><strong>Close</strong> - Ctrl + p</li>
+                    <!-- <li><strong>Live Server</strong> - Ctrl + L</li> -->
+                    <!-- <li><strong>End Server</strong> - Ctrl + L</li> -->
+                    <!-- <li><strong>Run Script</strong> - Ctrl + 5</li> -->
+                </ul>
+            </p>
+            <h3>Secret</h3>
+            <p>
+                If you press ALT + S, it will open a configuration file where you can configure the app and even change its appearance.
+            </p>
+        </div>       
+        <script>
+            const {ipcRenderer:api}= require("electron");
+            const lang = "pt";
+        </script>
+        
+        <script src="./javascript/components/tabs.js"></script>
+        <script src="./javascript/components/tools.js"></script>
+        <script src="./javascript/link.js"></script>
+    </body>
+</html>

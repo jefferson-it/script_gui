@@ -1,0 +1,27 @@
+{
+  "name": "script-gui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "Jefferson Silva De Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nhac-dev/script_gui/issues"
+  },
+  "homepage": "https://github.com/Nhac-dev/script_gui",
+  "dependencies": {
+    "electron-builder": "^22.13.1",
+    "electron-reload": "^2.0.0-alpha.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "electron": "^15.1.2"
+  }
+}

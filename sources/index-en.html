@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./javascript/n-script.js"></script>
+    </head>
+    <body>
+        <header id="task-bar">
+            <nav class="nav-tools">
+                <ol>
+                    <li id="open-file">Open</li>
+                    <li id="new-file">New</li>
+                    <li id="save">Save</li>
+                    <li id="save-as">Save as</li>
+                    <li id="close">Close</li>
+                    <!-- <li id="on-server">Live Server</li> -->
+                    <!-- <li id="run-script">Run Script</li> -->
+                    <li id="help">Help</li>
+                </ol>
+            </nav>
+        </header>
+        <div id="welcome">
+            <h1>ScriptGui</h1>
+            <p>
+                Create notes and script with greater ease and productivity. App developed by
+                 <link-author url="https://jefferson-developer.herokuapp.com">Jefferson Silva</link-author>,
+                 visit our <link-author url="https://github.com/Nhac-dev">GirHub</link-author>,
+                 or our <link-author url="https://instagram.com/jeff.developer">instagram</link-author>.
+                 <br>
+                 <button id="init-open">Open file</button>
+                 <button id="init-new">New file</button>
+                 <button id="init-help">Help</button>
+                 <button id="portuguese-v">Versão Português</button>            
+            </p>
+        </div>
+        <div id="tab-cont"></div>
+        <div id="area-cont"></div>
+
+       
+        <script>
+            const {ipcRenderer:api}= require("electron");
+            const lang = "en";
+        </script>
+        
+        <script src="./javascript/components/tabs.js"></script>
+        <script src="./javascript/components/tools.js"></script>
+        <script src="./javascript/link.js"></script>
+    </body>
+</html>

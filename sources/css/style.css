@@ -1,0 +1,122 @@
+/* Defaults tags styles */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    /* background-color: #09B2C2; <- color base*/
+    background-color: #cce8ff;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+button{
+    min-width: 5rem;
+    min-height: 2rem;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    margin: 1rem 0.5rem;
+}
+
+link-author{
+    text-decoration: underline #fff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    border: none;
+    background-color: rgb(254, 255, 254);
+    border-top: 0.12rem solid #4c66d8;
+    height: 100%;
+    color: #3768b1;
+    padding: 0.5rem;
+}
+
+/* Task bar style  */
+#task-bar{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    min-height: 1rem;
+}
+#task-bar nav ol li{
+    display: flex;
+    flex-direction: row;
+}
+#task-bar nav ol li{
+    margin: 0.5rem;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+}
+#task-bar nav ol li:hover{
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+}
+
+/* Tabs */
+#tab-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabs{
+    min-width: 6rem;
+    margin-top: 0.2rem;
+    color: #fff;
+    min-height: 2rem;
+    background-color: #3768b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tabs p{
+    margin: 0.2rem;
+}
+.area_text, #area-cont{
+    width: 100%;
+    height: 90%;
+}
+.area_text{
+    height: 100%;
+}
+
+#welcome{
+    width: 95%;
+    margin: 0.2rem auto;
+    background-color: #9286fa;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.2rem 2rem #c1bafd ;
+}
+
+
+#init-open{
+    background-color: #86faad;
+}
+#init-new{
+    background-color: #fad586;
+}
+#english-v, #portuguese-v{
+    background-color: #7d1b8a;
+    color: #fff;
+}
